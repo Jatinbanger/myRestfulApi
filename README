@@ -1,0 +1,31 @@
+Project Is Based On Spring Boot Framework.
+I have disabled spring boot security.
+DataBase used is PostGreSql.
+
+How to run :
+  1. Please Install postgresql
+  2. Update application.properties file as per your connection string
+
+Post:
+Url : http://localhost:8080/products/1
+Request Body : 
+{
+
+        "name": "Kindal",
+        "currentValue": {
+            "price": 22233.23,
+            "currencyCode": "USD"
+        }
+}
+
+Get:
+Url : http://localhost:8080/products/1
+Response Body : 
+{
+        "id": 1,
+        "name": "Kindal",
+        "currentValue": {
+            "price": 22233.23,
+            "currencyCode": "USD"
+        }
+}
